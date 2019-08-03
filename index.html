@@ -1,16 +1,16 @@
 <html> 
-
+    <head>
+        <title>House Automation</title>
+    </head>
 <body> 
 	<!-- onclick event is generated 
 		and it calls turnOnOff function --> 
 	<!-- OFFbulb.jpg is the turn off bulb image --> 
-<img id="Image" onclick="turnOnOff()"
-src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"> 
-
-	<p>Click on the bulb to turn it ON and OFF</p> 
-
-
+<img id="Image" src="images/OFFbulb.jpg" style="width:50px"/> 
+	
     <script src="js/utils.js"></script>
+    <button onclick="document.getElementById('Image').src='images/OFFbulb.jpg'">Turn off</button>
+    <button onclick="document.getElementById('Image').src='images/ONbulb.jpg'">Turn on the light</button>
 </body> 
 
 </html> 

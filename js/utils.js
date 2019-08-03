@@ -8,10 +8,10 @@ function turnOnOff() {
 	//it match with ONbulb otherwise 
 	//change it to ONbulb.jpg --> 
 	if (image.src.match("ONbulb")) {
-        image.src = "https://cdncontribute.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg"; 
+        image.src = "images/OFFbulb.jpg"
     }		
 	else{
-        image.src = "https://cdncontribute.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg"; 
+        image.src = "images/ONbulb.jpg"; 
     }
 		
 } 

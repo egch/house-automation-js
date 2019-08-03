@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <title>House Automation</title>
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    </head>
-<body> 
-    <div class='container'>
-        <div class='row'>
-            <div class='col-md-12'>
-                <div id="bulb_1" class='col-md-3'>
-                    <img src="images/OFFbulb.jpg" style="width:50px" />
-                    <figcaption>Light 1</figcaption>
-                </div>
-                <div id="bulb_2" class='col-md-3'>
-                    <img  src="images/OFFbulb.jpg" style="width:50px" />
-                    <figcaption>Light 2</figcaption>
-                </div>
-                <div id="bulb_3" class='col-md-3'>
-                    <img  src="images/OFFbulb.jpg" style="width:50px" />
-                    <figcaption>Light 3</figcaption>
-                </div>
-                <div id="bulb_4" class='col-md-3'>
-                    <img  src="images/OFFbulb.jpg" style="width:50px" />
-                    <figcaption>Light 4</figcaption>
-                </div>            
-        </div>
-       </div>
-    </div>
-	<!-- onclick event is generated 
-		and it calls turnOnOff function --> 
-	<!-- OFFbulb.jpg is the turn off bulb image --> 
+<html lang="en">
 
-	
+<head>
+    <title>House Automation</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="row">
+                    <h2>House Automation Control Panel</h2>
+                </div>
+                <div class="row">
+                    <button onclick="turnOnOff('bulb_1');">Light 1</button>
+                    <button onclick="turnOnOff('bulb_2');">Light 2</button>
+                    <button onclick="turnOnOff('bulb_3');">Light 3</button>
+                    <button onclick="turnOnOff('bulb_4');">Light 4</button>
+                </div>
+
+            </div>
+        </section>
+        <div class='container'>
+            <div class="row">
+                <div  class="col-md-3">
+                    <figure>
+                        <img id="bulb_1" src="images/OFFbulb.jpg" style="width:50px" />
+                        <figcaption>Room 1</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure>
+                        <img id="bulb_2" src="images/OFFbulb.jpg" style="width:50px" />
+                        <figcaption>Room 2</figcaption>
+                    </figure>
+                </div>
+                <div  class="col-md-3">
+                    <figure>
+                        <img id="bulb_3" src="images/OFFbulb.jpg" style="width:50px" />
+                        <figcaption>Room 3</figcaption>
+                    </figure>
+                </div>
+                <div  class="col-md-3">
+                    <figure>
+                        <img id="bulb_4" src="images/OFFbulb.jpg" style="width:50px" />
+                        <figcaption>Room 4</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- onclick event is generated 
+		and it calls turnOnOff function -->
+    <!-- OFFbulb.jpg is the turn off bulb image -->
+
+
     <script src="js/utils.js"></script>
 
-    <button onclick="turnOnOff('bulb_1');">Light 1</button>
-    <button onclick="turnOnOff('bulb_2');">Light 2</button>
-    <button onclick="turnOnOff('bulb_3');">Light 3</button>
-    <button onclick="turnOnOff('bulb_4');">Light 4</button>
-</body> 
 
-</html> 
+</body>
+
+</html>

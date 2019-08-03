@@ -1,12 +1,7 @@
 function turnOnOff(id) {
-    // taking image in image variable 	
-	let image = document.getElementById(id).children[0];	
+    
+	let image = document.getElementById(id);
 
-	//Match the image name 
-	//whether it is ONbulb or OFFbulb 
-	//change image to OFFbulb.jpg if 
-	//it match with ONbulb otherwise 
-	//change it to ONbulb.jpg --> 
 	if (image.src.match("ONbulb")) {
         image.src = "images/OFFbulb.jpg"
     }		

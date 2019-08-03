@@ -1,0 +1,27 @@
+{
+  "name": "house-automation",
+  "version": "1.0.0",
+  "description": "A JavaScript application simulating house automation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egch/house-automation-js.git"
+  },
+  "keywords": [
+    "JS",
+    "House",
+    "Automation"
+  ],
+  "author": "Enrico Giurin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egch/house-automation-js/issues"
+  },
+  "homepage": "https://github.com/egch/house-automation-js#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

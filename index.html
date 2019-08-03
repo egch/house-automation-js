@@ -1,16 +1,43 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en"> 
     <head>
         <title>House Automation</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
 <body> 
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="bulb_1" class='col-md-3'>
+                    <img src="images/OFFbulb.jpg" style="width:50px" />
+                    <figcaption>Light 1</figcaption>
+                </div>
+                <div id="bulb_2" class='col-md-3'>
+                    <img  src="images/OFFbulb.jpg" style="width:50px" />
+                    <figcaption>Light 2</figcaption>
+                </div>
+                <div id="bulb_3" class='col-md-3'>
+                    <img  src="images/OFFbulb.jpg" style="width:50px" />
+                    <figcaption>Light 3</figcaption>
+                </div>
+                <div id="bulb_4" class='col-md-3'>
+                    <img  src="images/OFFbulb.jpg" style="width:50px" />
+                    <figcaption>Light 4</figcaption>
+                </div>            
+        </div>
+       </div>
+    </div>
 	<!-- onclick event is generated 
 		and it calls turnOnOff function --> 
 	<!-- OFFbulb.jpg is the turn off bulb image --> 
-<img id="Image" src="images/OFFbulb.jpg" style="width:50px"/> 
+
 	
     <script src="js/utils.js"></script>
-    <button onclick="document.getElementById('Image').src='images/OFFbulb.jpg'">Turn off</button>
-    <button onclick="document.getElementById('Image').src='images/ONbulb.jpg'">Turn on the light</button>
+
+    <button onclick="turnOnOff('bulb_1');">Light 1</button>
+    <button onclick="turnOnOff('bulb_2');">Light 2</button>
+    <button onclick="turnOnOff('bulb_3');">Light 3</button>
+    <button onclick="turnOnOff('bulb_4');">Light 4</button>
 </body> 
 
 </html> 

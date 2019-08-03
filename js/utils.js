@@ -1,6 +1,6 @@
-function turnOnOff() {
+function turnOnOff(id) {
     // taking image in image variable 	
-    var image = document.getElementById('Image'); 
+	let image = document.getElementById(id).children[0];	
 
 	//Match the image name 
 	//whether it is ONbulb or OFFbulb 

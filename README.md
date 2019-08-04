@@ -28,8 +28,8 @@ Extensions are allowed by modifying the index.html file, i.e. introducing a new 
 
 ## Setup
 This application can be hosted on a plain HTTP server.
-
 I tested the application with Chrome using python as an HTTP server.
+The application can be seen online [here](https://egch.github.io/house-automation-js/)
 
 
 ## Download source code

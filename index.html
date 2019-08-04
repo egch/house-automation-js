@@ -15,25 +15,100 @@
                 <div class="row">
                     <h2>House Automation Control Panel</h2>
                 </div>
-                <div class="row">
-                    <button onclick="turnOnOff('bulb_1');">Light 1</button>
-                    <button onclick="turnOnOff('bulb_2');">Light 2</button>
-                    <button onclick="turnOnOff('bulb_3');">Light 3</button>
-                    <button onclick="turnOnOff('bulb_4');">Light 4</button>
-                </div>
+
 
                 <div class="row">
-                        <button onclick="decreaseValue('temp_1');">-</button>
-                        <button onclick="increaseValue('temp_1');">+</button>                       
-                </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="p-3 mb-2 bg-danger text-white">Room 1</div>
+                            <div class="container text-center">
+                                <div class="row mt-3 ml-2">
+                                    <button type="button" class="btn btn-success"
+                                        onclick="turnOnOff('bulb_1');">Light</button>
+                                </div>
+                                <div class="row mt-3 mb-2 ml-2">
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="decreaseValue('temp_1');">-</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="increaseValue('temp_1');">+</button>
+                                    </div>
+                                    Temperature
+                                </div>
+                            </div>
 
-            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="p-3 mb-2 bg-danger text-white">Room 2</div>
+                            <div class="container text-center">
+                                <div class="row mt-3 ml-2">
+                                    <button type="button" class="btn btn-success"
+                                        onclick="turnOnOff('bulb_2');">Light</button>
+                                </div>
+                                <div class="row mt-3 mb-2 ml-2">
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="decreaseValue('temp_2');">-</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="increaseValue('temp_2');">+</button>
+                                    </div>
+                                    Temperature
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="p-3 mb-2 bg-danger text-white">Room 3</div>
+                            <div class="container text-center">
+                                <div class="row mt-3 ml-2">
+                                    <button type="button" class="btn btn-success"
+                                        onclick="turnOnOff('bulb_3');">Light</button>
+                                </div>
+                                <div class="row mt-3 mb-2 ml-2">
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="decreaseValue('temp_3');">-</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="increaseValue('temp_3');">+</button>
+                                    </div>
+                                    Temperature
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="p-3 mb-2 bg-danger text-white">Room 4</div>
+                            <div class="container text-center">
+                                <div class="row mt-3 ml-2">
+                                    <button type="button" class="btn btn-success"
+                                        onclick="turnOnOff('bulb_4');">Light</button>
+                                </div>
+                                <div class="row mt-3 mb-2 ml-2">
+                                    <div class="btn-group mr-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="decreaseValue('temp_4');">-</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="increaseValue('temp_4');">+</button>
+                                    </div>
+                                    Temperature
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
         </section>
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card mb-3 shadow-sm">
-                            <div class="p-3 mb-2 bg-secondary text-white">Room 1</div>
+                        <div class="p-3 mb-2 bg-secondary text-white">Room 1</div>
                         <div class="container text-center">
                             <img id="bulb_1" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
                             <div id="temp_1">20</div>
@@ -41,47 +116,35 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                        <div class="card mb-3 shadow-sm">
-                                <div class="p-3 mb-2 bg-secondary text-white">Room 2</div>
-                            <div class="container text-center">
-                                <img id="bulb_2" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
-                                <div id="temp_2">20</div>
-                            </div>
+                    <div class="card mb-3 shadow-sm">
+                        <div class="p-3 mb-2 bg-secondary text-white">Room 2</div>
+                        <div class="container text-center">
+                            <img id="bulb_2" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                            <div id="temp_2">20</div>
                         </div>
+                    </div>
                 </div>
-                <div  class="col-md-3">
-                        <div class="card mb-3 shadow-sm">
-                                <div class="p-3 mb-2 bg-secondary text-white">Room 3</div>
-                            <div class="container text-center">
-                                <img id="bulb_3" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
-                                <div id="temp_3">20</div>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card mb-3 shadow-sm">
+                        <div class="p-3 mb-2 bg-secondary text-white">Room 3</div>
+                        <div class="container text-center">
+                            <img id="bulb_3" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                            <div id="temp_3">20</div>
                         </div>
+                    </div>
                 </div>
-                <div  class="col-md-3">
-                        <div class="card mb-3 shadow-sm">
-                                <div class="p-3 mb-2 bg-secondary text-white">Room 4</div>
-                            <div class="container text-center">
-                                <img id="bulb_4" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
-                                <div id="temp_4">20</div>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card mb-3 shadow-sm">
+                        <div class="p-3 mb-2 bg-secondary text-white">Room 4</div>
+                        <div class="container text-center">
+                            <img id="bulb_4" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                            <div id="temp_4">20</div>
                         </div>
+                    </div>
                 </div>
             </div>
-
-            
         </div>
     </main>
-
-
-    <!-- onclick event is generated 
-		and it calls turnOnOff function -->
-    <!-- OFFbulb.jpg is the turn off bulb image -->
-
-
     <script src="js/utils.js"></script>
-
-
 </body>
-
 </html>

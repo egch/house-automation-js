@@ -22,35 +22,54 @@
                     <button onclick="turnOnOff('bulb_4');">Light 4</button>
                 </div>
 
+                <div class="row">
+                        <button onclick="decreaseValue('temp_1');">-</button>
+                        <button onclick="increaseValue('temp_1');">+</button>                       
+                </div>
+
             </div>
         </section>
         <div class='container'>
             <div class="row">
-                <div  class="col-md-3">
-                    <figure>
-                        <img id="bulb_1" src="images/OFFbulb.jpg" style="width:50px" />
-                        <figcaption>Room 1</figcaption>
-                    </figure>
+                <div class="col-md-3">
+                    <div class="card mb-3 shadow-sm">
+                            <div class="p-3 mb-2 bg-secondary text-white">Room 1</div>
+                        <div class="container text-center">
+                            <img id="bulb_1" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                            <div id="temp_1">20</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <figure>
-                        <img id="bulb_2" src="images/OFFbulb.jpg" style="width:50px" />
-                        <figcaption>Room 2</figcaption>
-                    </figure>
+                        <div class="card mb-3 shadow-sm">
+                                <div class="p-3 mb-2 bg-secondary text-white">Room 2</div>
+                            <div class="container text-center">
+                                <img id="bulb_2" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                                <div id="temp_2">20</div>
+                            </div>
+                        </div>
                 </div>
                 <div  class="col-md-3">
-                    <figure>
-                        <img id="bulb_3" src="images/OFFbulb.jpg" style="width:50px" />
-                        <figcaption>Room 3</figcaption>
-                    </figure>
+                        <div class="card mb-3 shadow-sm">
+                                <div class="p-3 mb-2 bg-secondary text-white">Room 3</div>
+                            <div class="container text-center">
+                                <img id="bulb_3" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                                <div id="temp_3">20</div>
+                            </div>
+                        </div>
                 </div>
                 <div  class="col-md-3">
-                    <figure>
-                        <img id="bulb_4" src="images/OFFbulb.jpg" style="width:50px" />
-                        <figcaption>Room 4</figcaption>
-                    </figure>
+                        <div class="card mb-3 shadow-sm">
+                                <div class="p-3 mb-2 bg-secondary text-white">Room 4</div>
+                            <div class="container text-center">
+                                <img id="bulb_4" src="images/OFFbulb.jpg" style="width:50px;align-content: center" />
+                                <div id="temp_4">20</div>
+                            </div>
+                        </div>
                 </div>
             </div>
+
+            
         </div>
     </main>
 

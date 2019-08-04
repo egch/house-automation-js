@@ -22,12 +22,6 @@ In order to have a decent layout the Bootstrap template has been used.
 The application simulates the control of the ligths and temperatures in four rooms numerated from 1 to 4.
 Extensions are allowed by modifying the index.html file, i.e. introducing a new room or a new device to be monitored (for instances door or curtains.)
 
-## How to build/Setup
-Bootstrap is accessed locally, then it has to be installed through npm (which is required to be installed in the target env)
-Once downloaded the application from github move to the folder and run the command:
-
-*$ npm install*
-
 
 ## Third-party libraries
 * [Bootstrap](https://getbootstrap.com/): Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.

@@ -1,10 +1,15 @@
-function turnOnOff(id) {    
-	let image = document.getElementById(id);
+function turnOnOff(imageId, btn) {    
+	let image = document.getElementById(imageId);
+	
 	if (image.src.match("ONbulb")) {
-        image.src = "images/OFFbulb.jpg"
+		image.src = "images/OFFbulb.jpg";
+		btn.className = "btn btn-light";
+		btn.innerText = "On";
     }		
 	else{
-        image.src = "images/ONbulb.jpg"; 
+		image.src = "images/ONbulb.jpg"; 
+		btn.className = "btn btn-dark";
+		btn.innerText = "Off";
     }		
 } 
 
